@@ -64,7 +64,13 @@ export function Countdown() {
     if (activeCycle) {
       document.title = `${minutes}: ${seconds}`
     }
-  }, [minutes, seconds, activeCycle])
+  }, [
+    minutes,
+    seconds,
+    activeCycle,
+    activeCycle?.finishedDate,
+    activeCycle?.interruptedDate,
+  ])
 
   return (
     <CountdownContainer>

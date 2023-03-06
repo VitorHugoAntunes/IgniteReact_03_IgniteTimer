@@ -82,6 +82,7 @@ export function CyclesContextProvider({ children }: ChildrenProps) {
 
   function markCurrentCycleAsFinished() {
     dispatch(markCurrentCycleAsFinishedAction())
+    document.title = 'Ciclo finalizado'
     // setCycles((state) =>
     //   state.map((cycle) => {
     //     if (cycle.id === activeCycleId) {
@@ -109,6 +110,7 @@ export function CyclesContextProvider({ children }: ChildrenProps) {
 
   function interruptCurrentCycle() {
     dispatch(interruptCurrentCycleAction())
+    document.title = 'Ciclo interrompido'
     // Percorrendo o array de ciclos e aplicando a interrupcao apenas pro ciclo ativo no momento atraves de seu ID
     // setCycles((state) =>
     //   state.map((cycle) => {

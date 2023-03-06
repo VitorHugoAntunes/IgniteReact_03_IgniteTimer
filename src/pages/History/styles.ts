@@ -2,10 +2,11 @@ import styled from 'styled-components'
 
 export const HistoryContainer = styled.div`
   flex: 1;
-  padding: 3.5rem;
+  padding: 1rem 3.5rem;
 
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 
   h1 {
     font-size: 1.5rem;
