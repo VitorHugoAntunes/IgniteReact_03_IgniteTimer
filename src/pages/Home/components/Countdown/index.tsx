@@ -23,7 +23,7 @@ export function Countdown() {
       interval = setInterval(() => {
         const secondsDifference = differenceInSeconds(
           new Date(),
-          activeCycle.startDate,
+          new Date(activeCycle.startDate),
         )
 
         // Se a diferenca de segundos for maior que o total de segundos do ciclo, significa que o ciclo acabou
